@@ -1,6 +1,6 @@
 {
   "name": "socket.io-prometheus-v3",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Exposes metrics about socketio v3 for Prometheus",
   "author": "Julien Ripouteau",
   "main": "lib/index.js",

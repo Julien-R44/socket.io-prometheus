@@ -3,6 +3,10 @@
 Exposes metrics endpoints for prometheus to collect data about socket.io v3.
 
 ## Installation
+```
+$ npm i socket.io-prometheus-v3
+```
+
 
 ## Usage 
 ```

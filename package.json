@@ -1,0 +1,37 @@
+{
+  "name": "socket.io-prometheus-v3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Julien-R44/socket.io-prometheus-v3.git"
+  },
+  "author": "Julien Ripouteau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Julien-R44/socket.io-prometheus-v3/issues"
+  },
+  "homepage": "https://github.com/Julien-R44/socket.io-prometheus-v3#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.14.0",
+    "@typescript-eslint/parser": "^4.14.0",
+    "eslint": "^7.18.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.2.1",
+    "tslint": "^6.1.3",
+    "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "@types/socket.io": "^2.1.12",
+    "prom-client": "^13.0.0",
+    "socket.io": "^3.1.0"
+  }
+}

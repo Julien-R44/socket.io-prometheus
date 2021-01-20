@@ -1,6 +1,6 @@
 {
   "name": "socket.io-prometheus-v3",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Exposes metrics about socketio v3 for Prometheus",
   "author": "Julien Ripouteau",
   "main": "lib/index.js",
@@ -10,7 +10,12 @@
     "prepare": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "files": ["lib/**/*"],
+  "files": [
+    "lib/**/*"
+  ],
+  "engines": {
+    "node": ">=11.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Julien-R44/socket.io-prometheus-v3.git"

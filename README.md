@@ -7,7 +7,6 @@ Exposes metrics endpoints for prometheus to collect data about socket.io v3.
 $ npm i socket.io-prometheus-v3
 ```
 
-
 ## Usage 
 ```
 const { PrometheusSocketIo } = require('socket.io-prometheus-v3')

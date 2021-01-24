@@ -22,6 +22,7 @@ export default class SocketIoCollector {
     const orgEmit = socket.emit
     socket.emit = (event: string, ...args: any[]): boolean => {
       Metrics.totalSentsEvents.inc()
+      Metrics.totalSentsBytes.inc(Helpers.dataToBytes(args))
       return orgEmit.apply(socket, [event, ...args])
     }
 
@@ -29,7 +30,6 @@ export default class SocketIoCollector {
     io.emit = (event: string, ...args: any[]): boolean => {
       Metrics.totalSentsEvents.inc()
       Metrics.totalSentsBytes.inc(Helpers.dataToBytes(args))
-
       return orgServerEmit.apply(io, [event, ...args])
     }
   }

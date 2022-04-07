@@ -1,44 +1,43 @@
 {
-  "name": "socket.io-prometheus-v3",
-  "version": "1.0.3",
-  "description": "Exposes metrics about socketio v3 for Prometheus",
   "author": "Julien Ripouteau",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
-  "scripts": {
-    "build": "tsc",
-    "prepare": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bugs": {
+    "url": "https://github.com/Julien-R44/socket.io-prometheus/issues"
+  },
+  "dependencies": {
+    "prom-client": "^14.0.1"
+  },
+  "description": "Exposes metrics about socket.io v4 for Prometheus",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.18.0",
+    "@typescript-eslint/parser": "^5.18.0",
+    "eslint": "^8.12.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.3"
+  },
+  "engines": {
+    "node": ">=11.0.0"
   },
   "files": [
     "lib/**/*"
   ],
-  "engines": {
-    "node": ">=11.0.0"
+  "homepage": "https://github.com/Julien-R44/socket.io-prometheus#readme",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "name": "socket.io-prometheus-v3",
+  "peerDependencies": {
+    "socket.io": "^4"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Julien-R44/socket.io-prometheus-v3.git"
+    "url": "git+https://github.com/Julien-R44/socket.io-prometheus.git"
   },
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Julien-R44/socket.io-prometheus-v3/issues"
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/Julien-R44/socket.io-prometheus-v3#readme",
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.14.0",
-    "@typescript-eslint/parser": "^4.14.0",
-    "eslint": "^7.18.0",
-    "eslint-config-prettier": "^7.2.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^3.3.1",
-    "prettier": "^2.2.1",
-    "tslint": "^6.1.3",
-    "typescript": "^4.1.3"
-  },
-  "dependencies": {
-    "@types/socket.io": "^2.1.12",
-    "prom-client": "^13.0.0",
-    "socket.io": "^3.1.0"
-  }
+  "types": "lib/index.d.ts",
+  "version": "1.0.3"
 }
